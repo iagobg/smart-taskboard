@@ -3,8 +3,6 @@ import { v } from "convex/values";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { api } from "./_generated/api";
 
-// ... imports
-
 export const generate = action({
   args: { prompt: v.string() },
   handler: async (ctx, { prompt }) => {

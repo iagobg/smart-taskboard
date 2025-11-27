@@ -12,7 +12,7 @@ type Task = {
 };
 
 export default function App() {
-  const tasks = useQuery(api.tasks.list) ?? [];
+  const tasks: Task[] = useQuery(api.tasks.list) ?? [];
   const addTask = useMutation(api.tasks.add);
   const updateStatus = useMutation(api.tasks.updateStatus);
   const removeTask = useMutation(api.tasks.remove);
